@@ -291,7 +291,7 @@ class FirebaseWebRtcAdapter {
 
       // TODO: support other auth type
       default:
-        NAF.log.log("FirebaseWebRtcInterface.auth: Unknown authType " + type);
+        NAF.log.write("FirebaseWebRtcInterface.auth: Unknown authType " + type);
         break;
     }
   }
