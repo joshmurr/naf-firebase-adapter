@@ -23,8 +23,8 @@ class FirebaseWebRtcAdapter {
     this.timeOffsets = [];
     this.avgTimeOffset = 0;
 
-    config = config || window.firebaseConfig;
-    this.firebase = firebase || window.firebase;
+    config = config || window.top.firebaseConfig || window.firebaseConfig;
+    this.firebase = firebase || window.top.firebase || window.firebase;
 
     if (this.firebase === undefined) {
       throw new Error(
